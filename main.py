@@ -30,11 +30,11 @@ def validation():
     msg = ''
 
     if len(entry) == 0:
-        msg = 'name can\'t be empty'
+        msg = "name can't be empty"
     else:
         try:
             if any(ch.isdigit() for ch in name):
-                msg = 'Name can\'t have numbers'
+                msg = "Name can't have numbers"
             elif len(entry) <= 2:
                 msg = 'name is too short.'
             elif len(entry) > 100:
